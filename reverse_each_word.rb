@@ -1,4 +1,7 @@
 def reverse_each_word (word)
   array = word.split(/ /)
-  puts array
+  array.collect do |value|
+    value.reverse()
+  end
+  array
 end
